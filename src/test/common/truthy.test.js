@@ -1,6 +1,6 @@
 import {describe, it} from 'mocha';
 import {expect} from 'chai';
-import truthy from "../../main/common/truthy";
+import truthy from "../../main/common/truthy.js";
 
 describe('#truthy', () => {
   context(`With (null)`, () => {
@@ -21,10 +21,10 @@ describe('#truthy', () => {
     });
   });
 
-  context(`With ({}.notHere)`, () => {
+  context(`With ({}.nope)`, () => {
     it(`Return false`, () => {
       const expectValue = false;
-      const result = truthy({}.notHere);
+      const result = truthy({}.nope);
 
       expect(result).to.equal(expectValue);
     });
