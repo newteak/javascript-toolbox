@@ -1,6 +1,6 @@
-const chai = require('chai');
-const expect = chai.expect;
-const existy = require('./existy').existy;
+import {describe, it} from 'mocha';
+import {expect} from 'chai';
+import existy from "../../main/common/existy.js";
 
 describe('#existy', () => {
   context(`With (null)`, () => {

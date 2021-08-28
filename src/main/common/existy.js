@@ -1,9 +1,11 @@
 /**
- * existy는 존재 여부를 알려주는 함수
  *
+ * existy judge target is existy or not
+ *
+ * example
  * existy(null);             // => false
  * existy(undefined);        // => false
- * existy({}.notHere);       // => false
+ * existy({}.nope);          // => false
  * existy((function(){})()); // => false
  * existy(0);                // => true
  * existy(false);            // => true
@@ -17,6 +19,4 @@ function existy(x) {
   return x != null;
 }
 
-module.exports = {
-  existy
-};
+export default existy;
