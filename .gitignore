@@ -324,3 +324,5 @@ flycheck_*.el
 
 
 .idea/**
+
+js-play.js
