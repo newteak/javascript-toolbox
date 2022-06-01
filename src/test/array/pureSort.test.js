@@ -28,14 +28,14 @@ describe('#pureSort', () => {
       const actualValue = pureSort([3, 1, 20]);
 
       expect(actualValue).to.deep.equal(expectValue);
-    })
+    });
   });
 
   context('With (target)', () => {
     it('After sorting, target array is same order', () => {
       const targetArr = [3, 1, 2];
       const expectValue = [3, 1, 2];
-      pureSort(targetArr)
+      pureSort(targetArr);
       const actualValue = targetArr;
 
       expect(actualValue).to.deep.equal(expectValue);
